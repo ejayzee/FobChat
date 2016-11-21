@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		625A5E199920B3BB39B2D1E8 /* Pods_FobChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9175949385E0130AAA85C24A /* Pods_FobChat.framework */; };
 		B138B42E1DB9EBBC00029DF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B138B42D1DB9EBBC00029DF5 /* AppDelegate.swift */; };
 		B138B4301DB9EBBC00029DF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B138B42F1DB9EBBC00029DF5 /* ViewController.swift */; };
 		B138B4331DB9EBBC00029DF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B138B4311DB9EBBC00029DF5 /* Main.storyboard */; };
 		B138B4351DB9EBBC00029DF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B138B4341DB9EBBC00029DF5 /* Assets.xcassets */; };
 		B138B4381DB9EBBC00029DF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B138B4361DB9EBBC00029DF5 /* LaunchScreen.storyboard */; };
+		B138B4401DB9EC9A00029DF5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B138B43F1DB9EC9A00029DF5 /* GoogleService-Info.plist */; };
+		B15530DA1DB9FC880073A2C7 /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15530D91DB9FC880073A2C7 /* SnapsViewController.swift */; };
+		B15530DD1DB9FFD00073A2C7 /* Unknown.png in Resources */ = {isa = PBXBuildFile; fileRef = B15530DC1DB9FFD00073A2C7 /* Unknown.png */; };
+		B15530DF1DBA003B0073A2C7 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15530DE1DBA003B0073A2C7 /* PictureViewController.swift */; };
+		B17EF24E1DE3A50C0078879D /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17EF24D1DE3A50C0078879D /* SelectUserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1076BB3581562E99EBF3E652 /* Pods-FobChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FobChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FobChat/Pods-FobChat.debug.xcconfig"; sourceTree = "<group>"; };
+		647D0C30ECE8E59123745876 /* Pods-FobChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FobChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-FobChat/Pods-FobChat.release.xcconfig"; sourceTree = "<group>"; };
+		9175949385E0130AAA85C24A /* Pods_FobChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FobChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B138B42A1DB9EBBC00029DF5 /* FobChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FobChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B138B42D1DB9EBBC00029DF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B138B42F1DB9EBBC00029DF5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +31,12 @@
 		B138B4341DB9EBBC00029DF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B138B4371DB9EBBC00029DF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B138B4391DB9EBBC00029DF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B138B43F1DB9EC9A00029DF5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B15530D81DB9FA6F0073A2C7 /* FobChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FobChat.entitlements; sourceTree = "<group>"; };
+		B15530D91DB9FC880073A2C7 /* SnapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
+		B15530DC1DB9FFD00073A2C7 /* Unknown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Unknown.png; sourceTree = "<group>"; };
+		B15530DE1DBA003B0073A2C7 /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
+		B17EF24D1DE3A50C0078879D /* SelectUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +44,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				625A5E199920B3BB39B2D1E8 /* Pods_FobChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36EDF960632D5D2B2698BC84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9175949385E0130AAA85C24A /* Pods_FobChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1EE38FE97BE185B804C5D5B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1076BB3581562E99EBF3E652 /* Pods-FobChat.debug.xcconfig */,
+				647D0C30ECE8E59123745876 /* Pods-FobChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B138B4211DB9EBBC00029DF5 = {
 			isa = PBXGroup;
 			children = (
 				B138B42C1DB9EBBC00029DF5 /* FobChat */,
 				B138B42B1DB9EBBC00029DF5 /* Products */,
+				A1EE38FE97BE185B804C5D5B /* Pods */,
+				36EDF960632D5D2B2698BC84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +89,18 @@
 		B138B42C1DB9EBBC00029DF5 /* FobChat */ = {
 			isa = PBXGroup;
 			children = (
+				B15530D81DB9FA6F0073A2C7 /* FobChat.entitlements */,
 				B138B42D1DB9EBBC00029DF5 /* AppDelegate.swift */,
 				B138B42F1DB9EBBC00029DF5 /* ViewController.swift */,
+				B15530D91DB9FC880073A2C7 /* SnapsViewController.swift */,
+				B15530DE1DBA003B0073A2C7 /* PictureViewController.swift */,
+				B17EF24D1DE3A50C0078879D /* SelectUserViewController.swift */,
 				B138B4311DB9EBBC00029DF5 /* Main.storyboard */,
 				B138B4341DB9EBBC00029DF5 /* Assets.xcassets */,
 				B138B4361DB9EBBC00029DF5 /* LaunchScreen.storyboard */,
 				B138B4391DB9EBBC00029DF5 /* Info.plist */,
+				B138B43F1DB9EC9A00029DF5 /* GoogleService-Info.plist */,
+				B15530DC1DB9FFD00073A2C7 /* Unknown.png */,
 			);
 			path = FobChat;
 			sourceTree = "<group>";
@@ -71,9 +112,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B138B43C1DB9EBBC00029DF5 /* Build configuration list for PBXNativeTarget "FobChat" */;
 			buildPhases = (
+				179FF7F7B335F2A929038497 /* [CP] Check Pods Manifest.lock */,
 				B138B4261DB9EBBC00029DF5 /* Sources */,
 				B138B4271DB9EBBC00029DF5 /* Frameworks */,
 				B138B4281DB9EBBC00029DF5 /* Resources */,
+				B56E21EB925C8BE9F40B02DB /* [CP] Embed Pods Frameworks */,
+				FCDF72F6726122B3039C029C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -98,6 +142,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = S6SNTXX99S;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -125,12 +174,62 @@
 			buildActionMask = 2147483647;
 			files = (
 				B138B4381DB9EBBC00029DF5 /* LaunchScreen.storyboard in Resources */,
+				B15530DD1DB9FFD00073A2C7 /* Unknown.png in Resources */,
 				B138B4351DB9EBBC00029DF5 /* Assets.xcassets in Resources */,
+				B138B4401DB9EC9A00029DF5 /* GoogleService-Info.plist in Resources */,
 				B138B4331DB9EBBC00029DF5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		179FF7F7B335F2A929038497 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B56E21EB925C8BE9F40B02DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FobChat/Pods-FobChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCDF72F6726122B3039C029C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FobChat/Pods-FobChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B138B4261DB9EBBC00029DF5 /* Sources */ = {
@@ -138,7 +237,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B138B4301DB9EBBC00029DF5 /* ViewController.swift in Sources */,
+				B15530DF1DBA003B0073A2C7 /* PictureViewController.swift in Sources */,
+				B17EF24E1DE3A50C0078879D /* SelectUserViewController.swift in Sources */,
 				B138B42E1DB9EBBC00029DF5 /* AppDelegate.swift in Sources */,
+				B15530DA1DB9FC880073A2C7 /* SnapsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +361,10 @@
 		};
 		B138B43D1DB9EBBC00029DF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1076BB3581562E99EBF3E652 /* Pods-FobChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FobChat/FobChat.entitlements;
 				DEVELOPMENT_TEAM = S6SNTXX99S;
 				INFOPLIST_FILE = FobChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -272,8 +376,10 @@
 		};
 		B138B43E1DB9EBBC00029DF5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 647D0C30ECE8E59123745876 /* Pods-FobChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FobChat/FobChat.entitlements;
 				DEVELOPMENT_TEAM = S6SNTXX99S;
 				INFOPLIST_FILE = FobChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -302,6 +408,7 @@
 				B138B43E1DB9EBBC00029DF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
