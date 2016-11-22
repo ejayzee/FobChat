@@ -18,6 +18,7 @@
 		B15530DD1DB9FFD00073A2C7 /* Unknown.png in Resources */ = {isa = PBXBuildFile; fileRef = B15530DC1DB9FFD00073A2C7 /* Unknown.png */; };
 		B15530DF1DBA003B0073A2C7 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15530DE1DBA003B0073A2C7 /* PictureViewController.swift */; };
 		B17EF24E1DE3A50C0078879D /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17EF24D1DE3A50C0078879D /* SelectUserViewController.swift */; };
+		B17EF2501DE3BE970078879D /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17EF24F1DE3BE970078879D /* user.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		B15530DC1DB9FFD00073A2C7 /* Unknown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Unknown.png; sourceTree = "<group>"; };
 		B15530DE1DBA003B0073A2C7 /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		B17EF24D1DE3A50C0078879D /* SelectUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
+		B17EF24F1DE3BE970078879D /* user.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,12 +91,10 @@
 		B138B42C1DB9EBBC00029DF5 /* FobChat */ = {
 			isa = PBXGroup;
 			children = (
+				B17EF2511DE3BEB80078879D /* ViewControllers */,
+				B17EF2521DE3BEDF0078879D /* Models */,
 				B15530D81DB9FA6F0073A2C7 /* FobChat.entitlements */,
 				B138B42D1DB9EBBC00029DF5 /* AppDelegate.swift */,
-				B138B42F1DB9EBBC00029DF5 /* ViewController.swift */,
-				B15530D91DB9FC880073A2C7 /* SnapsViewController.swift */,
-				B15530DE1DBA003B0073A2C7 /* PictureViewController.swift */,
-				B17EF24D1DE3A50C0078879D /* SelectUserViewController.swift */,
 				B138B4311DB9EBBC00029DF5 /* Main.storyboard */,
 				B138B4341DB9EBBC00029DF5 /* Assets.xcassets */,
 				B138B4361DB9EBBC00029DF5 /* LaunchScreen.storyboard */,
@@ -103,6 +103,25 @@
 				B15530DC1DB9FFD00073A2C7 /* Unknown.png */,
 			);
 			path = FobChat;
+			sourceTree = "<group>";
+		};
+		B17EF2511DE3BEB80078879D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B138B42F1DB9EBBC00029DF5 /* ViewController.swift */,
+				B15530D91DB9FC880073A2C7 /* SnapsViewController.swift */,
+				B15530DE1DBA003B0073A2C7 /* PictureViewController.swift */,
+				B17EF24D1DE3A50C0078879D /* SelectUserViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B17EF2521DE3BEDF0078879D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B17EF24F1DE3BE970078879D /* user.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +257,7 @@
 			files = (
 				B138B4301DB9EBBC00029DF5 /* ViewController.swift in Sources */,
 				B15530DF1DBA003B0073A2C7 /* PictureViewController.swift in Sources */,
+				B17EF2501DE3BE970078879D /* user.swift in Sources */,
 				B17EF24E1DE3A50C0078879D /* SelectUserViewController.swift in Sources */,
 				B138B42E1DB9EBBC00029DF5 /* AppDelegate.swift in Sources */,
 				B15530DA1DB9FC880073A2C7 /* SnapsViewController.swift in Sources */,
