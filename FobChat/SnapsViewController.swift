@@ -27,7 +27,24 @@ class SnapsViewController: UIViewController, UITableViewDelegate, UITableViewDat
             snap.imageURL = (snapshot.value! as! NSDictionary)["imageURL"] as! String
             snap.from = (snapshot.value! as! NSDictionary)["from"] as! String
             snap.descrip = (snapshot.value! as! NSDictionary)["description"] as! String
+            snap.key = snapshot.key
+            snap.uuid = (snapshot.value! as! NSDictionary)["uuid"] as! String
+            
             self.snaps.append(snap)
+            self.tableView.reloadData()
+        })
+        
+        
+        FIRDatabase.database().reference().child("users").child(FIRAuth.auth()!.currentUser!.uid).child("snaps").observe(FIRDataEventType.childRemoved, with: {(snapshot) in
+            print(snapshot)
+           
+            var index = 0
+            for snap in self.snaps {
+                if snap.key == snapshot.key {
+                    self.snaps.remove(at: index)
+                }
+                index += 1
+            }
             self.tableView.reloadData()
         })
 
