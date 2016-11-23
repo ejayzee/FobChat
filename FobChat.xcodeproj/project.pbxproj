@@ -18,6 +18,7 @@
 		B15530DD1DB9FFD00073A2C7 /* Unknown.png in Resources */ = {isa = PBXBuildFile; fileRef = B15530DC1DB9FFD00073A2C7 /* Unknown.png */; };
 		B15530DF1DBA003B0073A2C7 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B15530DE1DBA003B0073A2C7 /* PictureViewController.swift */; };
 		B171FFB41DE57AF20006416C /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = B171FFB31DE57AF20006416C /* Snap.swift */; };
+		B171FFB61DE581AF0006416C /* viewSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B171FFB51DE581AF0006416C /* viewSnapViewController.swift */; };
 		B17EF24E1DE3A50C0078879D /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17EF24D1DE3A50C0078879D /* SelectUserViewController.swift */; };
 		B17EF2501DE3BE970078879D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17EF24F1DE3BE970078879D /* User.swift */; };
 /* End PBXBuildFile section */
@@ -39,6 +40,7 @@
 		B15530DC1DB9FFD00073A2C7 /* Unknown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Unknown.png; sourceTree = "<group>"; };
 		B15530DE1DBA003B0073A2C7 /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		B171FFB31DE57AF20006416C /* Snap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
+		B171FFB51DE581AF0006416C /* viewSnapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viewSnapViewController.swift; sourceTree = "<group>"; };
 		B17EF24D1DE3A50C0078879D /* SelectUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
 		B17EF24F1DE3BE970078879D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +116,7 @@
 				B15530D91DB9FC880073A2C7 /* SnapsViewController.swift */,
 				B15530DE1DBA003B0073A2C7 /* PictureViewController.swift */,
 				B17EF24D1DE3A50C0078879D /* SelectUserViewController.swift */,
+				B171FFB51DE581AF0006416C /* viewSnapViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				B138B4301DB9EBBC00029DF5 /* ViewController.swift in Sources */,
 				B15530DF1DBA003B0073A2C7 /* PictureViewController.swift in Sources */,
 				B171FFB41DE57AF20006416C /* Snap.swift in Sources */,
+				B171FFB61DE581AF0006416C /* viewSnapViewController.swift in Sources */,
 				B17EF2501DE3BE970078879D /* User.swift in Sources */,
 				B17EF24E1DE3A50C0078879D /* SelectUserViewController.swift in Sources */,
 				B138B42E1DB9EBBC00029DF5 /* AppDelegate.swift in Sources */,

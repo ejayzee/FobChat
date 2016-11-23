@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -114,17 +115,17 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="shl-kG-UAG" id="FXp-Xm-SF4"/>
-                        <segue destination="dog-Ha-gJX" kind="show" id="Amp-Fc-Rl2"/>
+                        <segue destination="dog-Ha-gJX" kind="show" identifier="viewsnapsegue" id="Amp-Fc-Rl2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SNV-fx-lp9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1724" y="122.78860569715144"/>
         </scene>
-        <!--View Controller-->
+        <!--View Snap View Controller-->
         <scene sceneID="SKU-vU-3Ht">
             <objects>
-                <viewController id="dog-Ha-gJX" sceneMemberID="viewController">
+                <viewController id="dog-Ha-gJX" customClass="viewSnapViewController" customModule="FobChat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jtk-gt-LSQ"/>
                         <viewControllerLayoutGuide type="bottom" id="g92-ae-kza"/>
@@ -132,12 +133,36 @@
                     <view key="view" contentMode="scaleToFill" id="zJO-V0-240">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0RZ-72-N9Q">
+                                <rect key="frame" x="5" y="636" width="365" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d2g-f5-9pb">
+                                <rect key="frame" x="26" y="74" width="323" height="552"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0RZ-72-N9Q" firstAttribute="leading" secondItem="zJO-V0-240" secondAttribute="leading" constant="5" id="6nF-6X-cFx"/>
+                            <constraint firstAttribute="trailing" secondItem="0RZ-72-N9Q" secondAttribute="trailing" constant="5" id="SmD-h8-3ey"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="d2g-f5-9pb" secondAttribute="trailing" constant="10" id="omX-md-buF"/>
+                            <constraint firstItem="d2g-f5-9pb" firstAttribute="top" secondItem="jtk-gt-LSQ" secondAttribute="bottom" constant="10" id="u3e-QV-Ix4"/>
+                            <constraint firstItem="d2g-f5-9pb" firstAttribute="leading" secondItem="zJO-V0-240" secondAttribute="leadingMargin" constant="10" id="vhW-qs-RAd"/>
+                            <constraint firstItem="0RZ-72-N9Q" firstAttribute="top" secondItem="d2g-f5-9pb" secondAttribute="bottom" constant="10" id="zjn-56-ybi"/>
+                            <constraint firstItem="g92-ae-kza" firstAttribute="top" secondItem="0RZ-72-N9Q" secondAttribute="bottom" constant="10" id="zyu-0x-R1D"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="d2g-f5-9pb" id="5DA-N9-RTD"/>
+                        <outlet property="label" destination="0RZ-72-N9Q" id="lub-pi-pIY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H3y-9u-MG7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1724" y="817"/>
+            <point key="canvasLocation" x="1724" y="816.34182908545733"/>
         </scene>
         <!--Picture View Controller-->
         <scene sceneID="TXH-xx-gwF">
