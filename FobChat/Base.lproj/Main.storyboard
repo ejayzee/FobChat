@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11535.1" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11761" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -78,7 +78,7 @@
         <!--Snaps View Controller-->
         <scene sceneID="IHv-3I-rYV">
             <objects>
-                <viewController id="ynt-5P-gr9" customClass="SnapsViewController" customModule="FobChat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="ynt-5P-gr9" customClass="SnapsViewController" customModule="FobChat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ibB-e7-fxz"/>
                         <viewControllerLayoutGuide type="bottom" id="pHz-N2-yHy"/>
@@ -86,7 +86,19 @@
                     <view key="view" contentMode="scaleToFill" id="Pje-Bt-MOI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="shl-kG-UAG">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="shl-kG-UAG" firstAttribute="top" secondItem="ibB-e7-fxz" secondAttribute="bottom" id="2xL-Us-Oau"/>
+                            <constraint firstAttribute="trailing" secondItem="shl-kG-UAG" secondAttribute="trailing" id="CR7-0i-BH4"/>
+                            <constraint firstItem="pHz-N2-yHy" firstAttribute="top" secondItem="shl-kG-UAG" secondAttribute="bottom" id="TQS-R2-npR"/>
+                            <constraint firstItem="shl-kG-UAG" firstAttribute="leading" secondItem="Pje-Bt-MOI" secondAttribute="leading" id="kL8-uQ-rfw"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Lxt-Q5-hIk">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="jHr-rh-sx6">
@@ -100,10 +112,32 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="shl-kG-UAG" id="FXp-Xm-SF4"/>
+                        <segue destination="dog-Ha-gJX" kind="show" id="Amp-Fc-Rl2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SNV-fx-lp9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1724" y="122.78860569715144"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SKU-vU-3Ht">
+            <objects>
+                <viewController id="dog-Ha-gJX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jtk-gt-LSQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="g92-ae-kza"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zJO-V0-240">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H3y-9u-MG7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1724" y="817"/>
         </scene>
         <!--Picture View Controller-->
         <scene sceneID="TXH-xx-gwF">
